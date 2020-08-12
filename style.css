@@ -1,0 +1,553 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+body{
+    font-family: "myriad-hebrew", sans-serif;
+}
+#box{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 108px;
+} 
+header div{
+    position: relative;
+    float: left;
+}
+header .left{
+    width: 74%;
+    height: 108px;
+    border-bottom: 3px solid #c49a6c;
+}
+header .left p:nth-child(1){
+    margin-top: 23px;
+}
+header .left p{
+    text-align: center;
+    font-weight: bold;
+    color: #c49a6c;
+    font-size: 26px;
+    margin-right: 4%;
+}
+header .center{
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 158px;
+    margin: 0px 10px;
+    margin-top: 6px;
+}
+header .right{
+    width: 17%;
+    height: 108px;
+    border-bottom: 3px solid #c49a6c;
+}
+#main{
+    background-image: url(images/main2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -164px;
+    background-position-y: top;
+    width: 100%;
+    height: 67%;
+    margin: 0 auto;
+}
+#main div{
+    position: relative;
+    float: left;
+}
+#main .content{
+    overflow: hidden;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+
+#main .content div h1{
+    font-size: 82px;
+    color: #c49a6c;
+}
+#main .content div h2{
+    color: #4a3b33;
+    line-height: 65px;
+    margin-bottom: 20px;
+}
+#main .content div h3{
+    color: #c49a6c;
+    border-bottom: 1px solid #c49a6c;
+    border-top: 1px solid #c49a6c;
+    line-height: 40px;
+    width: 295px;
+    margin: 0 auto;
+}
+#main .content div p{
+    color: #4a3b33;
+    margin-top: 10px;
+    padding: 0px 30%;
+}
+#main .content div .inv2 {
+    margin-top: 36px;
+    color: #463127;
+    font-weight:bold;
+}
+#site {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 21px;
+}
+#site a {
+    text-decoration: none;
+    background-color: #4a3b33;
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+    width: 100px;
+}
+#main .img{
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    background-position: bottom;
+}
+footer{
+    width: 100%;
+    height:30%;
+    background-color: #e7eef3;
+    margin: 0 auto;
+    text-align: right;
+}
+footer div:nth-child(1) {
+    width: 1081px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+footer .inv{
+    display: none;
+    padding: 13px 0px;
+    color: #4a3b33;
+    font-size: 14px;
+}
+footer #more {
+    margin-top: 10px;
+}
+footer #form input{
+    height: 26px;
+    width: 32.7%;
+    color: #4a3b33;
+    text-align: right;
+    background-color: #ffffff;
+    border: 1px solid #bbb5b2
+}
+footer #more #send{
+    position: relative;
+    float: left;
+    background-color: #906340;
+    width: 88px;
+    height: 37px;
+    border: 0px;
+    color: white;
+    margin-left: 7px;
+    font-size: 18px;
+    top: -25px;
+}
+footer #more p{
+    position: relative;
+    float: right;
+    font-size: 24px;
+    line-height: 22px;
+    width: 100%;
+    text-align: center;
+}
+.clearfix2::after {
+    height: 20px;
+    content: "";
+    clear: both;
+    display: table;
+}
+#ofice{
+    margin-top: -19px;
+    width: 100%;
+    background-color: #d3cfce;
+}
+#ofice p{
+    width: 861px;
+    margin: 0 auto;
+}
+footer #ofice p:nth-child(1) {
+    background-color: #d3cfce;
+    color: #906340;
+    font-size: 20px;
+    margin-top: 27px;
+    width: 1091px;
+    margin: 0 auto;
+}
+#float {
+    font-size: 17px;
+    font-weight: bold;
+    width: 1081px;
+    margin: 0 auto;
+    position: relative;
+    top: 21px;
+    font-size: 15px;
+}
+
+
+ @media only screen and (max-width:2000px){
+    header .right {
+        width: 15%;
+    } 
+    #main{
+        background-position-x: -289px;
+    }
+}
+@media only screen and (min-width:2000px){
+    #main{
+        background-position-x: -60px;
+    }
+}
+@media only screen and (max-width:1770px){
+    header .right {
+        width: 15%;
+    }  
+    #main{
+        background-position-x: -169px;
+    }
+} 
+@media only screen and (max-width:1670px){
+    header .left p {
+        margin-right: 0px;
+    }
+    header .right {
+        width: 14%;
+    }   
+    #main{
+        background-position-x: center;
+    }
+}
+@media only screen and (max-width:1400px){
+    header .left p {
+        margin-right: 302px;
+    }
+    #main .content {
+        width: 50%;
+    }
+    #main .content div h2{
+        line-height: 26px;
+    }
+    #main .content div h3{
+        line-height: 40px;
+    }
+    #main .content div p{
+        padding: 0px 17%;
+    }
+    #main .content div .inv2 {
+        margin-top: 36px;
+    }
+    footer #more p{
+        font-size: 21px;
+    }
+    .clearfix2{
+        height:23px;
+    }
+}
+ @media only screen and (min-width:2050px){
+    #main .content div {
+        margin: 20px 10px 0px 10px;
+    }
+    header .right {
+        width: 17%;
+    }
+    #main .content div .inv2 {
+        margin-top: 100px;
+    }    
+    
+}
+@media only screen and (max-width:1750px){
+    footer #site {
+        top: 78px;
+    }
+    #float{
+        top: 68px;
+    }
+}
+@media only screen and (max-width:1620px){
+    header .left {
+        width: 73%;
+    }
+
+}
+@media only screen and (max-width:1570px){
+    #float{
+        top: -18%;
+        font-size: 12px;
+    }
+    footer #site {
+        top: 34px;
+        margin: 0 auto;
+        width: 134px;
+    }
+}
+@media only screen and (max-width:1483px){
+    header .left {
+        width: 72%;
+    }
+}
+@media only screen and (max-width:1400px){
+    #main{
+        width: 100%;
+    }
+    header .left {
+        width: 71%;
+    }
+}
+@media only screen and (max-width:1300px){
+    header .left {
+        width: 69%;
+    }
+
+    #main .content div h3 {
+        width: 449px;
+    }
+    #main .content div p {
+            padding: 0px 9%;
+    }
+
+    #float{
+        top: 15px;
+    }
+    footer #site {
+        top: 32px;
+    }   
+}
+@media only screen and (max-width:1130px){
+    header .left {
+        width: 67%;
+    }
+
+    footer #ofice p:nth-child(1) {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+    #float{
+        width: 100%;
+    }
+    footer #form input {
+        width: 32.7%;
+    }
+
+    footer div:nth-child(1) {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1024px){
+    header .left {
+        width: 65%;
+    }
+}
+@media only screen and (max-width:1000px){
+header .left p {
+    margin-right: 129px;
+}
+
+}
+@media only screen and (max-width:769px){
+    header .left {
+        width: 61%;
+    }
+    header .left p {
+        font-size: 20px;
+        margin-right: 17%;
+    }
+    #main .content div h1 {
+        font-size: 68px;
+    }
+    #main .content div h2 {
+        font-size: 30px;
+    }
+    #main .content div h3 {
+        font-size: 22px;
+        width: 90%;
+    }
+    #main .content div p {
+        font-size: 25px;
+    }
+    .inv2{
+        display: none;
+    }
+    footer div:nth-child(1) {
+        padding: 0px;
+        width: 100%;
+    }
+    footer #form input {
+        width: 32%;
+    }
+    footer #more p {
+        font-size: 18px;
+        text-align: right;
+    }
+    footer #more #send {
+        margin-left: 17px;
+        width: 59px;
+        height: 22px;
+    }
+    footer .inv{
+        display: block;
+    }
+    #ofice p {
+        width: 100%;
+    }
+}
+ @media only screen and (max-width:415px){
+    header .left {
+        width: 41%;
+    }
+    header .left p {
+        font-size: 15px;
+        margin-right: 3%;
+        margin-top: 9px;
+    }
+    #main{
+        height: 390px;
+        background-position-x: -301px;
+    }
+    #main .content div h1 {
+        font-size: 36px;
+    }
+    #main .content div h2 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #main .content div h3 {
+        font-size: 9px;
+        width: 74%;
+        line-height: 21px;
+    }
+    #main .content div p {
+        font-size: 12px;
+        padding:3px;
+    }
+    #main .img {
+        height: 390px;
+    }
+    footer{
+            height: 30%;
+    }
+    footer #more p {
+        font-size: 8px;
+    }
+    footer #more #send {
+        margin-left: 0px;
+    }
+    #float{
+        margin-right: 52px;
+        top: 5px;
+    }
+    #ofice {
+margin-top: -97px;
+    }
+    #ofice p {
+        width: 100%;
+    }
+}
+ @media only screen and (max-width:376px){
+    header .right {
+        width: 11%;
+    }
+    #main .content div h1 {
+        font-size: 44px;
+    }
+    #main .content div h2 {
+        line-height: 18px;
+    }
+    #main .content div h3 {
+        width: 80%;
+        line-height: 16px;
+    }
+    #main .content div p {
+        font-size: 12px;
+    }
+    #main .img {
+        height: 317px;
+    }
+    #main {
+        height: 319px;
+    }
+ }
+ @media only screen and (max-width:361px){
+    header .left {
+        height: 76px;
+        width: 41%;
+    }
+    header .left p {
+        font-size: 10px;
+        margin-right: 3%;
+        margin-top: 11px;
+    }
+    header .center {
+        height: 91px;
+        width: 120px;
+        margin: 0px 10px;
+    }
+    header .right {
+        height: 76px;
+        width: 20%;
+    }
+    #main .content div h1 {
+        font-size: 44px;
+    }
+    #main .content div h2 {
+        line-height: 18px;
+    }
+    #main .content div h3 {
+        width: 80%;
+        line-height: 16px;
+    }
+    footer #form input {
+        width: 31%;
+    }
+    footer #more p {
+        font-size: 8px;
+    }
+    footer #more #send {
+        margin-left: 12px;
+    }
+ }
+ @media only screen and (max-width:321px){
+    header .right {
+        width: 15%;
+    }
+    #main{
+        height: 234px;
+    }
+    #main .img {
+        height: 234px;
+    }
+    #main .content div h1 {
+        font-size: 27px;
+    }
+    #main .content div h2 {
+        font-size: 12px;
+    }
+    #main .content div h3 {
+        font-size: 8px;
+    }
+    #main .content div p {
+        font-size: 9px;
+    }
+    footer #more p {
+        font-size: 7px;
+    }
+ }
+
+
+
+
+@import url("Myriad.ttf");
